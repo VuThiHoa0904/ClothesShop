@@ -16,8 +16,8 @@
             <div class="left-nav col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div id="ishiheaderblock">
                     <div class="text">
-                        <p>SALE: Save Up to 50% Off On First Order!</p>
-                        <a class="button">BUY NOW</a>
+                        <p>SALE: Giảm giá tới 50% cho đơn hàng đầu tiên!</p>
+                        <a class="button">MUA NGAY</a>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@
                         <div class="dropdown">
                             <a title="Account" class="dropdown-toggle" data-toggle="dropdown">
                                 <div class="account-text hidden-sm hidden-xs">
-                                    Account
+                                    Tài khoản
                                 </div>
                                 <div class="user-logo hidden-lg hidden-md">
                                     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -47,19 +47,19 @@
                                         <use xlink:href="#user-desktop" x="19%" y="23%"></use>
                                     </svg>
                                 </div>
-                                <span class="expand-more">Account</span>
+                                <span class="expand-more">Tài khoản</span>
 {{--                                <i class="fa fa-angle-down"></i>--}}
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/register">Register</a>
+                                    <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/register">Đăng ký</a>
                                 </li>
                                 <li>
                                     <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/login">
-                                        Login</a></li>
+                                        Đăng nhập</a></li>
                                 <li>
                                     <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/wishlist"
-                                       id="wishlist-total" title="Wish List (0)"><span class="wishlist-text">Wish List (0)</span></a>
+                                       id="wishlist-total" title="Wish List (0)"><span class="wishlist-text">Yêu thích (0)</span></a>
                                 </li>
                             </ul>
                         </div>

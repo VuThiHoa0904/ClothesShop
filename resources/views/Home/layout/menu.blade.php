@@ -155,7 +155,7 @@
                                         <use xlink:href="#magnifying-desktop1" x="20%" y="22%"></use>
                                     </svg>
                                 </div>
-                                Search
+                                Tìm kiếm
                             </div>
                             <div class="search-logo hidden-lg hidden-md dropdown-toggle" data-toggle="dropdown"
                                  aria-expanded="false">
@@ -173,28 +173,31 @@
                                     <use xlink:href="#magnifying-desktop" x="20%" y="22%"></use>
                                 </svg>
                             </div>
-                            <form class="dropdown-menu">
+                            <form class="dropdown-menu" action="{{route('search')}}">
                                 <div id="search" class="input-group">
                                     <input id="ajax-search-text" type="text" name="search" value=""
-                                           placeholder="Search Our Catalog" class="form-control input-lg"/>
+                                           placeholder="Nhập tên sản phẩm" class="form-control input-lg"/>
                                     <div class="ajaxishi-search" style="display: none;">
                                         <ul></ul>
                                     </div>
                                     <span class="input-group-btn">
-                                        <button id="ajax-search-btn" type="button" class="btn btn-default btn-lg"><i
-                                                class="fa fa-search"></i></button>
+                                        <button id="ajax-search-btn" type="button" class="btn btn-default btn-lg" style="top: 8px; right: 25px;">
+{{--                                            <a href="{{route('search')}}" class="btn btn-success">--}}
+                                                <i class="fa fa-search"></i>
+{{--                                            </a>--}}
+                                        </button>
                                       </span>
                                 </div>
-                                <script>
-                                    (function () {
-                                        document.getElementById('ajax-search-text').addEventListener('keypress', function (event) {
-                                            if (event.keyCode == 13) {
-                                                event.preventDefault();
-                                                document.getElementById('ajax-search-btn').click();
-                                            }
-                                        });
-                                    }());
-                                </script>
+{{--                                <script>--}}
+{{--                                    (function () {--}}
+{{--                                        document.getElementById('ajax-search-text').addEventListener('keypress', function (event) {--}}
+{{--                                            if (event.keyCode == 13) {--}}
+{{--                                                event.preventDefault();--}}
+{{--                                                document.getElementById('ajax-search-btn').click();--}}
+{{--                                            }--}}
+{{--                                        });--}}
+{{--                                    }());--}}
+{{--                                </script>--}}
                             </form>
                         </div>
                     </div>
@@ -202,8 +205,8 @@
                         <div class="blockcart">
                             <div id="cart" class="btn-group btn-block dropdown">
                                 <button type="button" data-loading-text="Loading..."
-                                        class="btn btn-inverse btn-block btn-lg dropdown-toggle"
-                                        data-toggle="dropdown" aria-expanded="true">
+                                        class="btn btn-inverse btn-block btn-lg"
+                                        >
                                     <span class="cart-link">
                                       <span class="cart-img hidden-sm hidden-xs">
                                           <svg aria-hidden="true" focusable="false" role="presentation" class="icon" viewBox="0 0 700 700">
@@ -233,14 +236,21 @@
                                         <a href="{{ route('cart') }}"><svg class="icon" viewBox="0 0 40 40"><use xlink:href="#cart-responsive" x="13%" y="13%"></use></svg></a>
                                       </span>
                                       <span class="cart-content">
-                                          <a href="{{ route('cart') }}"><span class="cart-name">Cart</span></a>
-                                        <span class="cart-products-count hidden-lg hidden-md">0</span>
+                                          <a href="{{ route('cart') }}"><span class="cart-name">Giỏ hàng</span></a>
+                                           @if (count($cart->items)>0)
+                                            <span class="cart-products-count ">{{ count($cart->items)}}</span>
+                                           @endif
+
                                       </span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu cart-dropdown">
                                     <li>
-                                        <p class="empty text-left">Your shopping cart is empty!</p>
+                                        @if (count($cart->items)<=0)
+                                            <p class="empty text-left">Giỏ hàng trống!</p>
+                                        @else
+                                            <p class="empty text-left">Bạn có {{ count($cart->items)}} sản phẩm trong giỏ hàng!</p>
+                                        @endif
                                     </li>
                                 </ul>
                             </div>
