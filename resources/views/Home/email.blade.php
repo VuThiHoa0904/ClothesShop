@@ -20,7 +20,7 @@
             <p>CHúng tôi gửi đến quý khách hàng chi tiết đơn hàng của mình đã đặt và Đơn hàng sẽ được chuyển đến khoảng từ 3 -> 5 ngày tới.
             </p>
             <p>Theo dõi đơn hàng tại (sử dụng MĐH) <a href="{{route('cart')}}">link</a></p>
-            <p>Quý khách check lại thông tin nếu có sai sót xin phản hồi tới đường dây nóng 09899999 hoặc
+            <p>Quý khách check lại thông tin nếu có sai sót xin phản hồi tới đường dây nóng 0123.456.789 hoặc
                 click. <a href="{{route('home')}}">Tại đây</a>
             </p>
         </div>
@@ -57,7 +57,7 @@
                             $price += $item->price * $item->quantity;
                         @endphp
                     @endforeach
-    
+
                 </tbody>
                 <tfoot>
                     <tr>
@@ -67,7 +67,7 @@
                     <tr>
                         <th colspan="5">Thành tiền</th>
                         <th>{{ number_format($price) }}</th>
-    
+
                     </tr>
                 </tfoot>
             </table>
@@ -75,6 +75,6 @@
     </div>
 </body>
 </html>
- 
-   
+
+
 

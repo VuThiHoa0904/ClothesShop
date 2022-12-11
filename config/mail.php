@@ -93,7 +93,7 @@ return [
 
     'from' => [
         'address' => 'thinhhung1994@gmail.com',
-        'name' => 'Hung Shop',
+        'name' => 'COUTURE',
     ],
 
     /*

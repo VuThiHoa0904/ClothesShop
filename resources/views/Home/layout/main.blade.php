@@ -86,7 +86,7 @@
 {{--        <hr>--}}
 {{--        <hr>--}}
         <section id="ishiproductblock-793023252" class="ishiproductsblock container">
-            <div class="row">
+            <div class="row" style="display: block;">
             @yield('content')
             </div>
         </section>

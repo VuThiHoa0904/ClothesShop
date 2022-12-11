@@ -3,6 +3,16 @@
     @include('home/layout/menu')
 @endsection
 @section('banner')
+    <div class="breadcrumb-container">
+        <h2 class="page-title">Thanh toán</h2>
+        <ul class="breadcrumb">
+            <li><a href="#"><i
+                        class="fa fa-home"></i></a></li>
+            <li>
+                <a href="#">Thanh toán</a>
+            </li>
+        </ul>
+    </div>
 @endsection
 @section('formSearch')
     @include('home/layout/formSearch')
@@ -14,12 +24,12 @@
         }
 
         .pay {
-            box-shadow: 5px 5px 5px 5px rgba(153, 243, 70, 0.5)
+            box-shadow: 5px 5px 5px 5px rgb(237 238 240);
         }
     </style>
 @endsection
 @section('content')
-    <div class="row">
+    <div class="row" >
         <div class="col-md-6 col-lg-6 col-12">
             <table class="table table-light">
                 <thead class="thead-light">
@@ -48,7 +58,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th colspan="2">Tổng Sản phẩm</th>
+                        <th colspan="3">Tổng Sản phẩm</th>
                         <th>{{ $cart->total_quantity }}</th>
                     </tr>
                     <tr>
@@ -58,7 +68,7 @@
                 </tfoot>
             </table>
         </div>
-        <div class="col-md-6 col-lg-6 col-12 pay">
+        <div class="col-md-6 col-lg-6 col-12 pay" style="text-align: left;">
             @include('admin.layout.alert')
             <form action="{{route('order')}}" method="post">
                 @csrf @method('get')
@@ -87,7 +97,9 @@
                     <textarea class="form-control" name="note" id="note" cols="30" rows="10"
                         placeholder="Nhập ghi chú sản phẩm..."></textarea>
                 </div>
-                <button type="submit" onclick="confirm('Nhấn OK để hoàn tất đơn hàng!')" class="btn btn-outline-light">Thanh toán <ion-icon name="logo-paypal"></ion-icon>
+                <button style="border-radius: 6px;
+                            background-color: #222326;"
+                        type="submit" onclick="confirm('Nhấn OK để hoàn tất đơn hàng!')" class="btn btn-outline-light">Thanh toán <ion-icon name="logo-paypal"></ion-icon>
                 </button>
             </form>
         </div>
