@@ -227,14 +227,25 @@
                                             {{ number_format($product->price) }} đ
                                             <span class="price-tax"></span>
                                         </p>
-
-                                        <div class="btn-cart">
-                                            <button type="button" data-toggle="tooltip" title="Add to Cart"
-                                                    onclick="cart.add('42');">
-                                                <i class="fa fa-shopping-cart"></i>
-                                                <span class="lblcart">Thêm vào giỏ hàng</span>
-                                            </button>
-                                        </div>
+                                        <form action="{{ route('cart.store') }}" method="post" class="form-group">
+                                            @csrf
+                                            @if (isset($cart->items[$product->id]))
+                                                <input type="number" name="quantity" max="100" min="0" size="2" class="form-control hidden"
+                                                       value="{{ $cart->items[$product->id]['quantity'] + 1}}" style="width: unset;">
+                                            @else
+                                                <input type="number" name="quantity" max="100" min="0" class="form-control hidden"
+                                                       value="1" size="2"  style="padding: 19px; width: unset;">
+                                                {{--                                    <p> Số lượng: <input type="number" name="quantity" max="100"--}}
+                                                {{--                                                         min="0" value="1"></p>--}}
+                                            @endif
+                                            <input type="hidden" name="id" value="{{ $product->id }}">
+                                            <div class="btn-cart">
+                                                <button type="submit" name="cart-outline" data-toggle="tooltip" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span class="lblcart">Thêm vào giỏ hàng</span>
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -481,13 +492,25 @@
                                     <span class="price-tax"></span>
                                 </p>
 
-                                <div class="btn-cart">
-                                    <button type="button" data-toggle="tooltip" title="Add to Cart"
-                                            onclick="cart.add('33');">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        <span class="lblcart">Thêm vào giỏ hàng </span>
-                                    </button>
-                                </div>
+                                <form action="{{ route('cart.store') }}" method="post" class="form-group">
+                                    @csrf
+                                    @if (isset($cart->items[$product->id]))
+                                        <input type="number" name="quantity" max="100" min="0" size="2" class="form-control hidden"
+                                               value="{{ $cart->items[$product->id]['quantity'] + 1}}" style="width: unset;">
+                                    @else
+                                        <input type="number" name="quantity" max="100" min="0" class="form-control hidden"
+                                               value="1" size="2"  style="padding: 19px; width: unset;">
+                                        {{--                                    <p> Số lượng: <input type="number" name="quantity" max="100"--}}
+                                        {{--                                                         min="0" value="1"></p>--}}
+                                    @endif
+                                    <input type="hidden" name="id" value="{{ $product->id }}">
+                                    <div class="btn-cart">
+                                        <button type="submit" name="cart-outline" data-toggle="tooltip" title="Add to Cart">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span class="lblcart">Thêm vào giỏ hàng</span>
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

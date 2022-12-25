@@ -52,14 +52,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/register">Đăng ký</a>
-                                </li>
-                                <li>
-                                    <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/login">
-                                        Đăng nhập</a></li>
-                                <li>
-                                    <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/wishlist"
-                                       id="wishlist-total" title="Wish List (0)"><span class="wishlist-text">Yêu thích (0)</span></a>
+                                    <a href="{{route('login')}}">Đăng nhập</a>
                                 </li>
                             </ul>
                         </div>

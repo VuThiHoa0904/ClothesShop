@@ -10,8 +10,8 @@
 
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
-            <p class="login-box-msg">pass: truong - 123456</p>
+            <p class="login-box-msg">Nhập thông tin đăng nhập</p>
+{{--            <p class="login-box-msg">pass: truong - 123456</p>--}}
             @include('admin.layout.alert')
             <form action="{{route('logon')}}" method="POST">
                 @csrf
@@ -42,7 +42,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
                     </div>
                     <!-- /.col -->
                 </div>

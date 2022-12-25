@@ -32,8 +32,8 @@
                                  alt="footer-logo">
                         </a>
                         <div class="store-description">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text.</p>
+                            <p>Couture sẽ mang lại cho khách hàng những trải nghiệm mua sắm thời trang hàng hiệu trực tuyến thú vị từ các thương hiệu thời trang quốc tế và trong nước, cam kết chất lượng phục vụ hàng đầu cùng với
+                                những bộ sưu tập quần áo nam nữ khổng lồ từ trang phục, phụ kiện cho phụ nữ với những xu hướng thời trang mới nhất. .</p>
                         </div>
                     </div>
 
@@ -65,19 +65,19 @@
                     <div id="information-container" class="collapse footer-dropdown">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/information&amp;information_id=4">About
+                                <a href="#">About
                                     Us</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/information&amp;information_id=6">Information</a>
+                                <a href="#">Information</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/information&amp;information_id=3">Privacy
+                                <a href="#">Privacy
                                     Policy</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/information&amp;information_id=5">Terms
+                                <a href="#">Terms
                                     Of Use</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/information&amp;information_id=8">Information</a>
+                                <a href="#">Information</a>
                             </li>
                         </ul>
                     </div>
@@ -95,19 +95,19 @@
                     <div id="account-container" class="collapse footer-dropdown">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/account">My
+                                <a href="#">My
                                     Account</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=product/special">Specials</a>
+                                <a href="#">Specials</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/order">Order
+                                <a href="#">Order
                                     History</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/newsletter">Newsletter</a>
+                                <a href="#">Newsletter</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/contact">Contact
+                                <a href="#">Contact
                                     Us</a></li>
                         </ul>
                     </div>
@@ -125,19 +125,19 @@
                     <div id="extras-container" class="collapse footer-dropdown">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=product/manufacturer">Brands</a>
+                                <a href="#">Brands</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=account/voucher">Gift
+                                <a href="#">Gift
                                     Certificates</a></li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=affiliate/login">Affiliate</a>
+                                <a href="#">Affiliate</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=product/special">Specials</a>
+                                <a href="#">Specials</a>
                             </li>
                             <li>
-                                <a href="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/index.php?route=information/sitemap">Site
+                                <a href="#">Site
                                     Map</a></li>
                         </ul>
                     </div>
@@ -146,8 +146,7 @@
                     <div id="boxes">
                         <div class="newsletter-text">
                             <h5>Newsletter</h5>
-                            <p class="newsletter-desc">Subscribe to our Newsletter and Get 10% Off on every
-                                product</p>
+                            <p class="newsletter-desc">Hãy đến với chúng tôi!</p>
                         </div>
                         <div class="newsletter-inner">
                             <div style="" id="dialog" class="window">
@@ -238,47 +237,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><p class="footer-aftertext">Powered By <a
-                            href="http://www.opencart.com">OpenCart</a> Your Store &copy; 2022</p></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div id="ishipayment-388231596" class="ishipaymentblock">
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/american-express-44x30.png"
-                                     alt="Paymenticon-1" class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/discover-44x30.png"
-                                     alt="Paymenticon-2" class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/google-wallet-44x30.png"
-                                     alt="Paymenticon-3" class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/mastercard-44x30.png"
-                                     alt="Paymenticon-4" class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/paypal-44x30.png"
-                                     alt="Paymenticon-5" class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="paymentblock">
-                            <a href="#">
-                                <img src="https://demo.ishithemes.com/opencart/OPC140/OPC140L01/image/cache/catalog/Payment/visa-44x30.png"
-                                     alt="Paymenticon-6" class="img-responsive"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            href="http://www.opencart.com">Cao Hữu Trường</a> Couture &copy; 2022</p></div>
+
             </div>
         </div>
     </div>
